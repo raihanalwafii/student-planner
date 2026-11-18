@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Task Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="sidebar">
+  <div class="logo"><svg class="ic" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>StudyPlanner</div>
+  <nav id="nav">
+    <button data-p="dashboard"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg>Dashboard</button>
+    <button data-p="planner"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Planner</button>
+    <button data-p="tasks"><svg class="ic" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Task</button>
+    <button data-p="study"><svg class="ic" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>Progress Study</button>
+    <button data-p="account"><svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Account</button>
+  </nav>
+</aside>
+<div class="main">
+  <header class="topbar">
+    <h1 id="title"></h1><div class="grow"></div>
+    <span id="date"></span>
+    <button class="btn" data-act="theme" title="Ganti tema">◐ Tema</button>
+    <div class="avatar" id="avatarTop"></div>
+  </header>
+  <main>
+    <section id="dashboard"></section>
+    <section id="planner"></section>
+    <section id="tasks"></section>
+    <section id="study"></section>
+    <section id="account"></section>
+  </main>
+</div>
+<div id="toasts"></div>
+<script src="script.js"></script>
+</body>
+</html>
